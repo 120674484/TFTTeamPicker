@@ -35,21 +35,37 @@ class MainWindow(QMainWindow):
     def show_random_hero_and_item(self):
         hero = random.choice(heroes)
         if hero == "魔神使者":
-            item = '巨人腰带'
+            item = '巨人腰带 金铲铲'
         elif hero == "花仙子":
-            item = '女神之泪'
+            item = '女神之泪 金铲铲'
         elif hero == "冰霜":
-            item = '锁子甲'
+            item = '锁子甲 金铲铲'
         elif hero == "小蜜蜂":
-            item = '拳套'
+            item = '拳套 金铲铲'
         elif hero == "次元术士":
-            item = '无用大棒'
+            item = '无用大棒 金铲铲'
         elif hero == "炎魔":
-            item = '反曲之弓'
+            item = '反曲之弓 金铲铲'
         elif hero == "咖啡甜心":
-            item = '暴风大剑'
+            item = '暴风大剑 金铲铲'
         elif hero == "诅咒女巫":
-            item = '负极斗篷'
+            item = '负极斗篷 金铲铲'
+        elif hero=='堡垒卫士':
+            item='锁子甲 金锅锅'
+        elif hero=='狂暴战士':
+            item='拳套 金锅锅'
+        elif hero=='猎手':
+            item='暴风大剑 金锅锅'
+        elif hero=='法师':
+            item='无用大棒 金锅锅'
+        elif hero=='复苏者':
+            item='负极斗篷 金锅锅'
+        elif hero=='学者':
+            item='女神之泪 金锅锅'
+        elif hero=='换形师':
+            item='巨人腰带 金锅锅'
+        elif hero=='魔战士':
+            item='反曲之弓 金锅锅'
         else:
             item = ''
         self.label1.setText(hero)
