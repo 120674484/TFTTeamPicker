@@ -1,8 +1,7 @@
-import sys
+import sys,random
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QWidget
 from PySide6.QtGui import QFont
 from PySide6.QtCore import Qt
-import random
 heroes = ["命运之子", "龙族", "魔神使者", "花仙子", "冰霜", "小蜜蜂", "次元术士", "炎魔","咖啡甜心", "诅咒女巫", "时间学派", "堡垒卫士", "强袭枪手", "猎手", "术师","法师", "魔战士", "复苏者", "学者", "换形师", "重装战士", "狂暴战士"]
 class MainWindow(QMainWindow):
     def __init__(self):
