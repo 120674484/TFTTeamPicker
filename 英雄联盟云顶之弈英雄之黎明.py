@@ -1,4 +1,4 @@
-import sys,random
+import random
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QWidget
 from PySide6.QtGui import QFont
 from PySide6.QtCore import Qt
@@ -66,8 +66,7 @@ class MainWindow(QMainWindow):
             item = ''
         self.label1.setText(hero)
         self.label2.setText(item)
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = MainWindow()
-    window.showMaximized()
-    sys.exit(app.exec())
+app = QApplication()
+window = MainWindow()
+window.showMaximized()
+app.exec()
