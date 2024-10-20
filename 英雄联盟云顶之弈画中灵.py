@@ -1,4 +1,4 @@
-import random
+from random import choice
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QVBoxLayout, QHBoxLayout, QWidget
 from PySide6.QtGui import QFont
 from PySide6.QtCore import Qt
@@ -33,7 +33,7 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(central_widget)
         self.setWindowTitle("英雄联盟云顶之弈画中灵")
     def show_random_hero_and_item(self):
-        hero = random.choice(heroes)
+        hero =choice(heroes)
         if hero == "夜幽":
             item = '拳套'
         elif hero == "天将":
