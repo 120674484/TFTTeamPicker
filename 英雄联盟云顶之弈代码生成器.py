@@ -53,9 +53,7 @@ def code2_generate(text,bonds,number_max,number_max_limit):
                     name1=names_prefix[index1]+names_suffix[index1]
                     name2=names_prefix[index2]+names_suffix[index2]
                     if name1[0]=='金':
-                        t=name2
-                        name2=name1
-                        name1=t
+                        name1,name2=name2,name1
                     if flag:
                         code2+=f'\n\t\telif hero == "{names_prefix[a]}":item ="{name1} {name2}"'
                     else:
